@@ -19,6 +19,7 @@
 
   body {
     min-height: 100vh;
+    min-width: 100vw;
     display: flex;
     flex-direction: column;
   }
@@ -26,7 +27,7 @@
 /*------------------HEADER--------------------*/
 
   header {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -36,14 +37,13 @@
   header nav {
     display: flex;
     flex: 1;
-    
     align-items: center;
-    padding: 50px;
+    padding: 50px 200px 20px 200px;
   }
 
   #links {
     display: flex;
-    
+    justify-content: space-evenly;
     
   }
 
@@ -62,34 +62,87 @@
     display: flex;
     flex: 2;
     justify-content: space-around;
-  }
-
-  #header-title {
-    color: var(--button-bg);
-    font-family: var(--font-title);
-    font-size: 36px;
-  }
-
-  #header-text {
-    color: var(--light-purple);
-    font-family: var(--font-text);
-    font-size: 18px;
-  }
-
-  .title-text {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    padding: 0 60px;
+    padding: 50px 100px;
   }
 
   .container {
     display: flex;
+    padding: 0;
+    margin-top: 0;
   }
+
+    .title-text {
+     display: flex;
+     flex-direction: column;
+     padding: 0 200px 0 200px;
+     
+    }
+
+      .header-title {
+        width: 550px;
+        color: var(--button-bg);
+        font-family: var(--font-title);
+        font-size: 36px;
+        margin-top: -28px;
+      }
+
+      .header-text {
+       width: 450px;
+       color: var(--light-purple);
+       font-family: var(--font-text);  
+       font-size: 18px;
+       text-align: justify;
+       line-height: 1.5;
+       
+      }
+
+      .container button {
+        display: flex;
+        align-items: center;
+        background-color: var(--dark-bg);
+        color: var(--button-bg);
+        font-family: var(--font-title);
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 100px;
+        width: 130px;
+      }
+
+      button:hover {
+        cursor: pointer;
+      }
+
+    div img {
+      flex: 1;
+      margin-right: 100px;
+      
+    }
 
 
 /*--------------------------------------------*/
 
   main {
     flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 200px;
+  }
+
+  .top {
+    display: flex;
+    flex: 2;
+    margin-bottom: 40px;
+  }
+
+
+
+  .bottom {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
   }
