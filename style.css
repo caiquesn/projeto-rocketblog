@@ -41,9 +41,21 @@
     padding: 50px 200px 20px 200px;
   }
 
-  #links {
+  header nav button {
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+    background-color: var(--button-bg);
+  }
+
+  header nav button svg {
+    width: 40px;
+    height: 20px;
+    
+  }
+
+  #links {
+    
     
   }
 
@@ -51,18 +63,26 @@
     text-decoration: none;
     color: var(--light-purple);
     font-family: var(--font-text);
+    padding-top: 50px;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
   }
 
   #input {
     width: 300px;
     height: 44px;
+    background-color: var(--purple-bg);
+    border: none;
+    color: var(--light-purple);
   }
 
   header div {
     display: flex;
     flex: 2;
     justify-content: space-around;
-    padding: 50px 100px;
+    padding: 0px 100px 50px;
   }
 
   .container {
@@ -74,7 +94,7 @@
     .title-text {
      display: flex;
      flex-direction: column;
-     padding: 0 200px 0 200px;
+     padding: 50px 200px 0 200px;
      
     }
 
@@ -84,6 +104,7 @@
         font-family: var(--font-title);
         font-size: 36px;
         margin-top: -28px;
+        padding-bottom: 20px;
       }
 
       .header-text {
@@ -115,7 +136,7 @@
     div img {
       flex: 1;
       margin-right: 100px;
-      
+      padding-top: 40px;
     }
 
 
@@ -139,7 +160,8 @@
   .bottom {
     display: flex;
     flex: 1;
-    justify-content: space-between;
+    
+    
   }
 
   footer {
